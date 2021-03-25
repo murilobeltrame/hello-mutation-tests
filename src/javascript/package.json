@@ -14,6 +14,7 @@
     "start": "tsdx watch",
     "build": "tsdx build",
     "test": "tsdx test",
+    "test:coverage": "tsdx test --coverage",
     "lint": "tsdx lint",
     "prepare": "tsdx build",
     "size": "size-limit",
@@ -46,6 +47,9 @@
   ],
   "devDependencies": {
     "@size-limit/preset-small-lib": "^4.10.1",
+    "@stryker-mutator/core": "^4.5.1",
+    "@stryker-mutator/jest-runner": "^4.5.1",
+    "@stryker-mutator/typescript-checker": "^4.5.1",
     "husky": "^5.2.0",
     "size-limit": "^4.10.1",
     "tsdx": "^0.14.1",

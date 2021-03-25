@@ -3,10 +3,10 @@ import { Publisher } from "./publisher";
 
 export class Book {
     
-    public authors: Author[] = null;
-    public publisher: Publisher = null;
+    public authors: Author[] = [];
+    public publisher: Publisher = new Publisher({name:''});
     public title: string = '';
-    public pages?: number = null;
+    public pages?: number = undefined;
 
     constructor(init: Partial<Book>) {
         if (!init.title) throw new Error('Title cannot be null');

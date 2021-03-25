@@ -2,3 +2,8 @@
 .DS_Store
 node_modules
 dist
+
+# stryker temp files
+.stryker-tmp
+
+coverage
