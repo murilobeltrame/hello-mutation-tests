@@ -1,5 +1,4 @@
 ﻿using HelloMutation.Domain.Entities;
-using System.Collections.Generic;
 using Xunit;
 
 namespace HelloMutation.Domain.Tests.Entities
