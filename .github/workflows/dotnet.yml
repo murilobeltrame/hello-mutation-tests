@@ -5,11 +5,13 @@ on:
     branches: [ main ]
   pull_request:
     branches: [ main ]
-
+    
 jobs:
   build:
 
     runs-on: ubuntu-latest
+    env:
+      working-directory: ./src/dotnet
 
     steps:
     - uses: actions/checkout@v2
@@ -18,8 +20,11 @@ jobs:
       with:
         dotnet-version: 5.0.x
     - name: Restore dependencies
+      working-directory: ${{env.working-directory}}
       run: dotnet restore
     - name: Build
+      working-directory: ${{env.working-directory}}
       run: dotnet build --no-restore
     - name: Test
+      working-directory: ${{env.working-directory}}
       run: dotnet test --no-build --collect:"XPlat Code Coverage" --verbosity normal
