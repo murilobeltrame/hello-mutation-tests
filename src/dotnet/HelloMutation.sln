@@ -7,6 +7,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloMutation.Domain", "Hel
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloMutation.Domain.Tests", "HelloMutation.Domain.Tests\HelloMutation.Domain.Tests.csproj", "{796E210A-2F88-4F48-8C9C-C803A83BEEC6}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{B4EF7CFD-1674-4696-8078-CF2E5C5FA63A}"
+	ProjectSection(SolutionItems) = preProject
+		scripts\mutate.cmd = scripts\mutate.cmd
+		scripts\test.cmd = scripts\test.cmd
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
