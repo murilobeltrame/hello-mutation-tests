@@ -1,4 +1,4 @@
-import { Cart } from "../src/domain/entities/cart"
+import { Cart } from '../src/domain/entities/cart'
 
 describe('Cart', () => {
     it(' should be instantiated', () => {

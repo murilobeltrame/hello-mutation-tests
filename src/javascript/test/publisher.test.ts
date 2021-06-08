@@ -1,4 +1,4 @@
-import { Publisher } from '../src/domain/entities/publisher';
+import { Publisher } from '../src/domain/entities/publisher'
 
 describe('Publisher', () => {
     it(' should be instantiated', () => {

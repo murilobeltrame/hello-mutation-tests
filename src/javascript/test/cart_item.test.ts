@@ -1,7 +1,7 @@
-import { Author } from "../src/domain/entities/author"
-import { Book } from "../src/domain/entities/book"
-import { CartItem } from "../src/domain/entities/cart_item"
-import { Publisher } from "../src/domain/entities/publisher"
+import { Author } from '../src/domain/entities/author'
+import { Book } from '../src/domain/entities/book'
+import { CartItem } from '../src/domain/entities/cart_item'
+import { Publisher } from '../src/domain/entities/publisher'
 
 describe('Cart Item', () => {
     it(' should be instantiated', () => {

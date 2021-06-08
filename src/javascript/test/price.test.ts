@@ -1,4 +1,4 @@
-import { Price } from '../src/domain/entities/price';
+import { Price } from '../src/domain/entities/price'
 
 describe('Price', () => {
     it(' should be instantiated', () => {

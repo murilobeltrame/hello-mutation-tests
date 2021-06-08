@@ -1,23 +1,23 @@
-import { ArgumentError } from "../errors/argument_error";
-import { ArgumentNullError } from "../errors/argument_null_error";
-import { Book } from "./book";
-import { CartItem } from "./cart_item";
+import { ArgumentError } from '../errors/argument_error'
+import { ArgumentNullError } from '../errors/argument_null_error'
+import { Book } from './book'
+import { CartItem } from './cart_item'
 
 export class Cart {
     
-    public createdAt!: Date;
-    public sessionId!: string;
+    public createdAt!: Date
+    public sessionId!: string
     
-    private _items!: CartItem[];
-    public get items(): CartItem[] { return this._items; }
+    private _items!: CartItem[]
+    public get items(): CartItem[] { return this._items }
 
-    private _checkedOut!: boolean;
-    public get checkedOut(): boolean {return this._checkedOut;}
+    private _checkedOut!: boolean
+    public get checkedOut(): boolean {return this._checkedOut}
 
     public get totalValue(): number {
-        let value = 0;
-        this._items.forEach((item) => value += item.price * item.quantity);
-        return value;
+        let value = 0
+        this._items.forEach((item) => value += item.price * item.quantity)
+        return value
     }
 
     constructor(init: Partial<Cart>) {
