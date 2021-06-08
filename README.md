@@ -11,7 +11,11 @@ It's implemented both in TypeScript *(in `javascript` folder)* and C# *(in `dotn
 ## Running tests for .Net
 
 In `src/dotnet` folder:
-- To run **Unit Tests**, execute the following command: `./scripts/test.cmd`
-- To run **Mutation Tests**, execute the following command: `./scripts/mutate.cmd`
+- To run **Unit Tests**, execute the following command: `./scripts/test.[cmd|sh]`
+- To run **Mutation Tests**, execute the following command: `./scripts/mutate.[cmd|sh]`
 
 ## Running tests for JavaScript/TypeScript
+
+In `src/javascript` folder:
+- To run **Unit Tests**, execute the following command: `./scripts/test.[cmd|sh]`
+- To run **Mutation Tests**, execute the following command: `./scripts/mutate.[cmd|sh]`
