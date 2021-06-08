@@ -20,7 +20,7 @@ export class Book {
     constructor(init: Partial<Book>) {
         if (!init.title) throw new ArgumentNullError('title');
         if (!init.publisher) throw new ArgumentNullError('publisher');
-        if (init.authors?.length ?? 0) throw new ArgumentNullError('authors');
+        if (!(init.authors?.length ?? 0)) throw new ArgumentNullError('authors');
         Object.assign(this, init);
 
         this._reviews = [];
